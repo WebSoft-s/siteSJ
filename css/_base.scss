@@ -1,0 +1,20 @@
+$fundoAzul: #186eff;
+$fundoCinza: #eef1f4;
+$fundoBranco: #ffffff;
+$texto: #707070;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
