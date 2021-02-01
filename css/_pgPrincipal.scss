@@ -1,48 +1,5 @@
 @import 'base';
-
-/* Menu */
-.containerMenu {
-  width: 100%;
-  color: $Branco;
-}
-.logo {
-  width: 130px;
-  padding: 10px;
-  margin-left: 10px;
-  filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.5))
-    drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
-}
-.menuListaContainer {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  height: 45px;
-  background: #186eff;
-}
-.menuLista {
-  display: flex;
-  margin: 10px 30px 7px 7px; /* cima - direita - baixo - esquerda */
-  filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.4))
-    drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
-}
-.menuLista li {
-  margin-left: 25px;
-}
-.menuLista li::after {
-  content: '|';
-  font-size: 25px;
-  line-height: 22px;
-  width: 6px;
-  margin-left: 20px;
-  color: $Branco;
-}
-
-.menuLista li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.6em;
-  font-weight: 500;
-}
+@import 'header_footer';
 
 /* Slide */
 .containerSlide {
@@ -50,7 +7,7 @@
   background-color: $cinza;
   text-align: center;
   width: 100%;
-  height: 600px;
+  height: 400px;
   justify-content: center;
 }
 .text {
@@ -100,10 +57,11 @@
   margin: 80px auto;
 }
 .sobreTxt {
-  text-align: left;
+  text-align: justify;
   font-size: 20px;
   line-height: 27px;
   color: $texto;
+  opacity: 0.8;
 }
 .titulo {
   font-size: 2.5em;
@@ -111,28 +69,4 @@
   margin-bottom: 30px;
   color: $texto;
 }
-/* Footer */
 
-.footer {
-  height: 90px;
-  width: 100%;
-  text-align: center;
-  background-color: #186eff;
-}
-.footer p {
-  padding-top: 35px;
-  font-size: 1.5em;
-  color: $Branco;
-}
-.footerBottom {
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  background-color: $cinzaClaro;
-}
-.footerBottom p {
-  padding-top: 12px;
-  font-size: 1.2em;
-  color: $texto;
-  font-style: italic;
-}
