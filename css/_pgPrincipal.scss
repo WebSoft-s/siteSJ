@@ -1,8 +1,9 @@
 @import 'base';
 
+/* Menu */
 .containerMenu {
   width: 100%;
-  color: $fundoBranco;
+  color: $Branco;
 }
 .logo {
   width: 130px;
@@ -33,7 +34,7 @@
   line-height: 22px;
   width: 6px;
   margin-left: 20px;
-  color: $fundoBranco;
+  color: $Branco;
 }
 
 .menuLista li a {
@@ -43,6 +44,7 @@
   font-weight: 500;
 }
 
+/* Slide */
 .containerSlide {
   display: flex;
   background-color: $cinza;
@@ -59,4 +61,78 @@
 }
 .text p {
   font-size: 3em;
+}
+
+/* Acesso rápido */
+.containerAcssRapido {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.acssRapidoBoxes {
+  display: flex;
+  font-size: 1em;
+  width: 500px;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.acssRapidoBox {
+  width: 150px;
+  background-color: #186eff;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.4))
+    drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+}
+.acssRapidoBox img {
+  width: 80px;
+  margin: 20px auto;
+}
+.acssRapidoBox h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: $Branco;
+}
+/* Sobre */
+.containerSobre {
+  max-width: 960px;
+  margin: 80px auto;
+}
+.sobreTxt {
+  text-align: left;
+  font-size: 20px;
+  line-height: 27px;
+  color: $texto;
+}
+.titulo {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: $texto;
+}
+/* Footer */
+
+.footer {
+  height: 90px;
+  width: 100%;
+  text-align: center;
+  background-color: #186eff;
+}
+.footer p {
+  padding-top: 35px;
+  font-size: 1.5em;
+  color: $Branco;
+}
+.footerBottom {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  background-color: $cinzaClaro;
+}
+.footerBottom p {
+  padding-top: 12px;
+  font-size: 1.2em;
+  color: $texto;
+  font-style: italic;
 }
