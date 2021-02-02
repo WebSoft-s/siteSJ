@@ -1,1 +1,54 @@
 @import 'base';
+
+.tituloLocalizacao {
+  text-align: center;
+  color: $texto;
+  margin: 30px 0 10px 0;
+}
+.tituloCidades.tituloPassos,
+.tituloCidades.tituloAlpinopolis {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.tituloCidades.tituloPassos::after,
+.tituloCidades.tituloAlpinopolis::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: $Azul;
+  margin: 10px 0 10px 0;
+}
+.containerPassos {
+  margin: 60px auto;
+  width: 1000px;
+}
+.tituloPassos {
+  font-size: 1.2em;
+  text-align: left;
+}
+.containerBoxes {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px 0 30px 0px;
+  justify-content: space-between;
+}
+.boxMapa {
+  text-align: center;
+  padding: 10px;
+  background-color: $cinzaClaro;
+}
+.mapa {
+  height: 300px;
+  width: 300px;
+  background-color: $cinza;
+  margin: 0 auto;
+  padding: 10px;
+}
+.containerBoxes.Alpinopolis {
+  display: flex;
+  max-width: 400px;
+  margin: 40px 0 30px 0px;
+  justify-content: space-between;
+}

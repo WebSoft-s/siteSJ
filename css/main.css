@@ -52,15 +52,13 @@ body {
 
 .containerMenu {
   width: 100%;
-  color: #ffffff;
+  background-color: #186eff;
 }
 
 .logo {
   width: 130px;
   padding: 10px;
   margin-left: 10px;
-  -webkit-filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.5)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
-          filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.5)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
 }
 
 .menuListaContainer {
@@ -72,7 +70,7 @@ body {
           justify-content: flex-end;
   width: 100%;
   height: 45px;
-  background: #186eff;
+  background-color: #d9d9d9;
 }
 
 .menuLista {
@@ -81,8 +79,8 @@ body {
   display: flex;
   margin: 10px 30px 7px 7px;
   /* cima - direita - baixo - esquerda */
-  -webkit-filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
-          filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+  -webkit-filter: drop-shadow(-2px -1px 1px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(-2px -1px 1px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
 }
 
 .menuLista li {
@@ -100,8 +98,8 @@ body {
 
 .menuLista li a {
   text-decoration: none;
-  color: #fff;
-  font-size: 1.6em;
+  color: #ffffff;
+  font-size: 1.3em;
   font-weight: 500;
 }
 
@@ -115,7 +113,7 @@ body {
 
 .footer p {
   padding-top: 35px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #ffffff;
 }
 
@@ -128,7 +126,7 @@ body {
 
 .footerBottom p {
   padding-top: 12px;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #2c2c2c;
   font-style: italic;
 }
@@ -155,7 +153,7 @@ body {
 }
 
 .text p {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 /* Acesso rápido */
@@ -173,7 +171,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1em;
+  font-size: 0.8em;
   width: 500px;
   margin-top: 60px;
   -webkit-box-pack: justify;
@@ -202,10 +200,38 @@ body {
   color: #ffffff;
 }
 
+.acssRapidoBox:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 /* Sobre */
 .containerSobre {
   max-width: 960px;
-  margin: 80px auto;
+  margin: 0 auto;
+}
+
+.containerSobre::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #186eff;
+  margin: 60px auto 20px auto;
+  /* cima - direita - baixo - esquerda */
+}
+
+.containerSobre::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #186eff;
+  margin: 80px auto 70px auto;
+  /* cima - direita - baixo - esquerda */
 }
 
 .sobreTxt {
@@ -217,12 +243,104 @@ body {
 }
 
 .titulo {
-  font-size: 2.5em;
+  font-size: 2em;
   text-align: center;
   margin-bottom: 30px;
   color: #2c2c2c;
 }
 
+/* Informações */
+.containerInformacoes {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+  color: #2c2c2c;
+}
+
+.tituloInfo {
+  font-size: 2em;
+  color: #2c2c2c;
+  margin-bottom: 40px;
+}
+
+.infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 700px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.funcionamento {
+  width: 400px;
+}
+
+.funcionamento ul {
+  padding: 10px;
+}
+
+.funcionamento ul li {
+  padding: 10px;
+  text-align: left;
+}
+
+.tituloFuncionamento,
+.tituloRedes {
+  font-size: 1.4em;
+  text-align: left;
+}
+
+.tituloFuncionamento::after,
+.tituloRedes::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #186eff;
+  margin: 10px 0px 10px 0;
+}
+
+.tituloCidades {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+/* Redes sociais */
+.Redes {
+  width: 300px;
+}
+
+.Redes ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.Redes ul li {
+  width: 60px;
+  margin-right: 14px;
+}
+
+.icones img {
+  -webkit-filter: drop-shadow(-2px -2px 1px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4)) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(-2px -2px 1px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4)) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.4));
+}
+
+.icones img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -255,5 +373,73 @@ img {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tituloLocalizacao {
+  text-align: center;
+  color: #2c2c2c;
+  margin: 30px 0 10px 0;
+}
+
+.tituloCidades.tituloPassos,
+.tituloCidades.tituloAlpinopolis {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.tituloCidades.tituloPassos::after,
+.tituloCidades.tituloAlpinopolis::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #186eff;
+  margin: 10px 0 10px 0;
+}
+
+.containerPassos {
+  margin: 60px auto;
+  width: 1000px;
+}
+
+.tituloPassos {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.containerBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  margin: 40px 0 30px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.boxMapa {
+  text-align: center;
+  padding: 10px;
+  background-color: #eef1f4;
+}
+
+.mapa {
+  height: 300px;
+  width: 300px;
+  background-color: #707070;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.containerBoxes.Alpinopolis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 400px;
+  margin: 40px 0 30px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
