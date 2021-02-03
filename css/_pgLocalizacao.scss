@@ -3,16 +3,16 @@
 .tituloLocalizacao {
   text-align: center;
   color: $texto;
+  font-size: $FontTitulo;
   margin: 50px 0 10px 0;
-
 }
-.tituloLocalizacao::after{
+.tituloLocalizacao::after {
   content: '';
   display: block;
   width: 1000px;
   height: 3px;
   background: $Azul;
-  margin: 70px auto 70px auto;
+  margin: 70px auto;
 }
 .tituloCidades.tituloPassos,
 .tituloCidades.tituloAlpinopolis {
@@ -46,7 +46,6 @@
 .boxMapa {
   text-align: center;
   padding: 10px;
-  //background-color: $cinzaClaro;
   border: 2px solid lightblue;
   border-radius: 12px;
   p {
@@ -70,4 +69,3 @@
   margin: 40px 0 30px 0px;
   justify-content: space-between;
 }
-

@@ -71,6 +71,9 @@ body {
   width: 100%;
   height: 45px;
   background-color: #06378b;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .menuLista {
@@ -380,19 +383,130 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.tituloLocalizacao {
+.tituloLocalizacao, .tituloReceitas {
   text-align: center;
   color: #2c2c2c;
+  font-size: 2em;
   margin: 50px 0 10px 0;
 }
 
-.tituloLocalizacao::after {
+.tituloLocalizacao::after, .tituloReceitas::after {
   content: '';
   display: block;
   width: 1000px;
   height: 3px;
   background: #186eff;
-  margin: 70px auto 70px auto;
+  margin: 70px auto;
+}
+
+.tituloCidades.tituloPassos,
+.tituloCidades.tituloAlpinopolis {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.tituloCidades.tituloPassos::after,
+.tituloCidades.tituloAlpinopolis::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #186eff;
+  margin: 10px 0 10px 0;
+}
+
+.containerPassos {
+  margin: 60px auto;
+  width: 1000px;
+}
+
+.tituloPassos {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.containerBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  margin: 40px 0 30px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.boxMapa {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid lightblue;
+  border-radius: 12px;
+}
+
+.boxMapa p {
+  padding: 15px;
+  background-color: #eef1f4;
+}
+
+.map {
+  max-width: 300px;
+}
+
+/*.mapa {
+  height: 300px;
+  width: 300px;
+  background-color: $cinza;
+  margin: 0 auto;
+  padding: 10px;
+}*/
+.containerBoxes.Alpinopolis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 400px;
+  margin: 40px 0 30px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tituloReceitas {
+  text-align: center;
+  font-size: 2em;
+  margin: 40px auto 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tituloLocalizacao, .tituloReceitas {
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 2em;
+  margin: 50px 0 10px 0;
+}
+
+.tituloLocalizacao::after, .tituloReceitas::after {
+  content: '';
+  display: block;
+  width: 1000px;
+  height: 3px;
+  background: #186eff;
+  margin: 70px auto;
 }
 
 .tituloCidades.tituloPassos,

@@ -1,1 +1,9 @@
 @import 'base';
+@import 'pgLocalizacao';
+
+.tituloReceitas {
+  text-align: center;
+  font-size: $FontTitulo;
+  margin: 40px auto 30px;
+  @extend .tituloLocalizacao;
+}
