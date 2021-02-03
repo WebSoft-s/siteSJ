@@ -3,7 +3,16 @@
 .tituloLocalizacao {
   text-align: center;
   color: $texto;
-  margin: 30px 0 10px 0;
+  margin: 50px 0 10px 0;
+
+}
+.tituloLocalizacao::after{
+  content: '';
+  display: block;
+  width: 1000px;
+  height: 3px;
+  background: $Azul;
+  margin: 70px auto 70px auto;
 }
 .tituloCidades.tituloPassos,
 .tituloCidades.tituloAlpinopolis {
@@ -37,18 +46,28 @@
 .boxMapa {
   text-align: center;
   padding: 10px;
-  background-color: $cinzaClaro;
+  //background-color: $cinzaClaro;
+  border: 2px solid lightblue;
+  border-radius: 12px;
+  p {
+    padding: 15px;
+    background-color: $cinzaClaro;
+  }
 }
-.mapa {
+.map {
+  max-width: 300px;
+}
+/*.mapa {
   height: 300px;
   width: 300px;
   background-color: $cinza;
   margin: 0 auto;
   padding: 10px;
-}
+}*/
 .containerBoxes.Alpinopolis {
   display: flex;
   max-width: 400px;
   margin: 40px 0 30px 0px;
   justify-content: space-between;
 }
+

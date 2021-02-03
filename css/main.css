@@ -70,7 +70,7 @@ body {
           justify-content: flex-end;
   width: 100%;
   height: 45px;
-  background-color: #d9d9d9;
+  background-color: #06378b;
 }
 
 .menuLista {
@@ -121,14 +121,15 @@ body {
   height: 40px;
   width: 100%;
   text-align: center;
-  background-color: #eef1f4;
+  background-color: #06378b;
 }
 
 .footerBottom p {
   padding-top: 12px;
-  font-size: 1em;
+  font-size: 12px;
   color: #2c2c2c;
   font-style: italic;
+  color: #ffffff;
 }
 
 /* Slide */
@@ -187,6 +188,10 @@ body {
   cursor: pointer;
   -webkit-filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
           filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+.acssRapidoBox a:link {
+  text-decoration: none;
 }
 
 .acssRapidoBox img {
@@ -378,7 +383,16 @@ body {
 .tituloLocalizacao {
   text-align: center;
   color: #2c2c2c;
-  margin: 30px 0 10px 0;
+  margin: 50px 0 10px 0;
+}
+
+.tituloLocalizacao::after {
+  content: '';
+  display: block;
+  width: 1000px;
+  height: 3px;
+  background: #186eff;
+  margin: 70px auto 70px auto;
 }
 
 .tituloCidades.tituloPassos,
@@ -421,17 +435,26 @@ body {
 .boxMapa {
   text-align: center;
   padding: 10px;
+  border: 2px solid lightblue;
+  border-radius: 12px;
+}
+
+.boxMapa p {
+  padding: 15px;
   background-color: #eef1f4;
 }
 
-.mapa {
-  height: 300px;
-  width: 300px;
-  background-color: #707070;
-  margin: 0 auto;
-  padding: 10px;
+.map {
+  max-width: 300px;
 }
 
+/*.mapa {
+  height: 300px;
+  width: 300px;
+  background-color: $cinza;
+  margin: 0 auto;
+  padding: 10px;
+}*/
 .containerBoxes.Alpinopolis {
   display: -webkit-box;
   display: -ms-flexbox;

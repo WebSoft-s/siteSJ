@@ -15,7 +15,8 @@
   justify-content: flex-end;
   width: 100%;
   height: 45px;
-  background-color: #d9d9d9;
+  //background-color: #d9d9d9;
+  background-color: $Blue;
 }
 .menuLista {
   display: flex;
@@ -58,11 +59,13 @@
   height: 40px;
   width: 100%;
   text-align: center;
-  background-color: $cinzaClaro;
+  //background-color: $cinzaClaro;
+  background-color: $Blue;
 }
 .footerBottom p {
   padding-top: 12px;
-  font-size: 1em;
+  font-size: 12px;
   color: $texto;
   font-style: italic;
+  color: $Branco;
 }
