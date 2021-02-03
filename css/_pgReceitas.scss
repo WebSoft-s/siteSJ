@@ -1,1 +1,17 @@
 @import 'base';
+//@import 'pgLocalizacao';
+
+.tituloReceitas {
+  text-align: center;
+  font-size: $FontTitulo;
+  margin: 40px auto 30px;
+  //@extend .tituloLocalizacao;
+}
+.tituloReceitas::after {
+  content: '';
+  display: block;
+  width: 1000px;
+  height: 3px;
+  background: $Azul;
+  margin: 70px auto;
+}

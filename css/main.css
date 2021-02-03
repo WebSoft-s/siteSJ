@@ -71,6 +71,9 @@ body {
   width: 100%;
   height: 45px;
   background-color: #06378b;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .menuLista {
@@ -363,6 +366,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.tituloReceitas {
+  text-align: center;
+  font-size: 2em;
+  margin: 40px auto 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -383,6 +392,7 @@ body {
 .tituloLocalizacao {
   text-align: center;
   color: #2c2c2c;
+  font-size: 2em;
   margin: 50px 0 10px 0;
 }
 
@@ -392,7 +402,7 @@ body {
   width: 1000px;
   height: 3px;
   background: #186eff;
-  margin: 70px auto 70px auto;
+  margin: 70px auto;
 }
 
 .tituloCidades.tituloPassos,
