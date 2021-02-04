@@ -14,7 +14,7 @@
   margin: 70px auto;
 }
 
-.containerMain {
+.containerMainReceitas {
   width: 55%;
   margin-left: auto;
   margin-right: auto;
@@ -35,13 +35,24 @@
       height: 322px;
       background-color: $cinza;
       text-align: center;
+      border-radius: 10px;
     }
     button {
       width: 100%;
       border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      color: $Branco;
+      font-weight: 600;
       background-color: $Azul;
       padding: 15px;
       margin-top: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: $AzulEscuro;
+      transform: scale(1.05);
+      transition: 0.3s;
     }
   }
 }

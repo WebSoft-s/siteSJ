@@ -16,21 +16,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  list-style-type: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.titulo {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: #2c2c2c;
 }
 
 * {
@@ -48,6 +39,39 @@ img {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: #2c2c2c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: #2c2c2c;
 }
 
 .containerMenu {
@@ -165,6 +189,12 @@ body {
 }
 
 /* Acesso rápido */
+.containerMainRapido {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .containerAcssRapido {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +215,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .acssRapidoBox {
@@ -220,70 +252,41 @@ body {
   cursor: pointer;
 }
 
-/* Sobre */
-.containerSobre {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.containerSobre::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #186eff;
-  margin: 60px auto 20px auto;
-  /* cima - direita - baixo - esquerda */
-}
-
-.containerSobre::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #186eff;
-  margin: 80px auto 70px auto;
-  /* cima - direita - baixo - esquerda */
-}
-
-.sobreTxt {
-  text-align: justify;
-  font-size: 20px;
-  line-height: 27px;
-  color: #2c2c2c;
-  opacity: 0.8;
-}
-
-.titulo {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #2c2c2c;
-}
-
 /* Informações */
+.containerMainInfo {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .containerInformacoes {
   width: 100%;
   text-align: center;
   margin-bottom: 70px;
+  margin-top: 70px;
   color: #2c2c2c;
 }
 
-.tituloInfo {
-  font-size: 2em;
-  color: #2c2c2c;
-  margin-bottom: 40px;
+.containerInformacoes::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #186eff;
+  margin: 10px 0px 10px 0;
 }
 
 .infos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 700px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 70px auto 100px auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .funcionamento {
@@ -353,6 +356,104 @@ body {
   cursor: pointer;
 }
 
+/* Sobre */
+.containerMainSobre {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerSobre {
+  max-width: 100%;
+  max-width: 960px;
+}
+
+.containerSobre::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #186eff;
+  margin: 60px auto 0px auto;
+  /* cima - direita - baixo - esquerda */
+}
+
+.containerSobre::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #186eff;
+  margin: 130px auto 0px auto;
+  /* cima - direita - baixo - esquerda */
+}
+
+.sobreTxt {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 27px;
+  color: #2c2c2c;
+  opacity: 0.8;
+}
+
+/* Contatos */
+.containerMainContatos {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.containerContatos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 70px 0 90px;
+}
+
+.boxLoja {
+  width: 230px;
+  max-height: 250px;
+  margin: 7px;
+}
+
+.boxLoja li {
+  padding: 12px 0 12px 0;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+.boxLoja p {
+  margin-left: 30px;
+}
+
+.tituloLoja {
+  font-size: 1.3em;
+  color: #2c2c2c;
+}
+
+.tituloLoja::after {
+  content: '';
+  display: block;
+  width: 55px;
+  height: 3px;
+  background: #186eff;
+  margin-top: 12px;
+  margin-bottom: 25px;
+}
+
+.iconesContatos {
+  width: 25px;
+  position: absolute;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -370,6 +471,14 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.titulo {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: #2c2c2c;
+}
+
 .tituloReceitas {
   text-align: center;
   font-size: 2em;
@@ -385,7 +494,7 @@ body {
   margin: 70px auto;
 }
 
-.containerMain {
+.containerMainReceitas {
   width: 55%;
   margin-left: auto;
   margin-right: auto;
@@ -415,14 +524,28 @@ body {
   height: 322px;
   background-color: #707070;
   text-align: center;
+  border-radius: 10px;
 }
 
 .containerReceitas .boxReceita button {
   width: 100%;
   border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 600;
   background-color: #186eff;
   padding: 15px;
   margin-top: 10px;
+  cursor: pointer;
+}
+
+.containerReceitas .boxReceita button:hover {
+  background-color: #06378b;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .containerReceitas::after {
@@ -449,6 +572,14 @@ img {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: #2c2c2c;
 }
 
 .tituloLocalizacao {
