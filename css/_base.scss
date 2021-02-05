@@ -32,16 +32,17 @@ body {
   max-width: 980px;
   margin: auto;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   opacity: 0.8;
   width: 10px;
 }
-::-webkit-scrollbar-track-piece{
+::-webkit-scrollbar-track-piece {
   background-color: $cinzaClaro;
   width: 1px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
-::-webkit-scrollbar-thumb{
-  background-color: #186eff; 
-  border-radius: 5px;
+::-webkit-scrollbar-thumb {
+  background-color: #186eff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }

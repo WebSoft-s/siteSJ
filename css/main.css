@@ -38,12 +38,13 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #186eff;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 * {
@@ -85,12 +86,13 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #186eff;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 * {
@@ -132,12 +134,13 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #186eff;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .containerMenu {
@@ -230,31 +233,6 @@ body {
   color: #ffffff;
 }
 
-/* Slide */
-.containerSlide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #707070;
-  text-align: center;
-  width: 100%;
-  height: 400px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.text {
-  width: 400px;
-  height: 50px;
-  margin: 250px auto;
-  color: #2c2c2c;
-}
-
-.text p {
-  font-size: 2em;
-}
-
 /* Acesso rápido */
 .containerAcssRapido {
   display: -webkit-box;
@@ -286,6 +264,8 @@ body {
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
           filter: drop-shadow(-4px -3px 2px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
 }
@@ -344,6 +324,11 @@ body {
   margin: 70px auto 100px auto;
 }
 
+.iconesCidadeInfo {
+  width: 25px;
+  position: absolute;
+}
+
 .funcionamento {
   width: 400px;
 }
@@ -354,6 +339,7 @@ body {
 
 .funcionamento ul li {
   padding: 10px;
+  padding-left: 33px;
   text-align: left;
 }
 
@@ -376,6 +362,7 @@ body {
 .tituloCidades {
   font-size: 1.2em;
   text-align: left;
+  padding-left: 33px;
 }
 
 /* Redes sociais */
@@ -399,6 +386,8 @@ body {
 }
 
 .icones img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-filter: drop-shadow(-2px -2px 1px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4)) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.4));
           filter: drop-shadow(-2px -2px 1px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4)) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.4));
 }
@@ -463,13 +452,12 @@ body {
   max-height: 260px;
   margin: 7px;
   padding: 10px;
-  border: 3px solid #186eff;
   border-radius: 5px;
 }
 
 .boxLoja li {
   padding: 12px 0 12px 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 500;
   color: #2c2c2c;
 }
@@ -537,12 +525,122 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #186eff;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/*Slide*/
+.slide-wrapper {
+  overflow: hidden;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide:hover {
+  will-change: transform;
+}
+
+.slide li {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-width: 100%;
+  max-height: 600px;
+  border-radius: 4px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slide li.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.arrow-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px 0;
+}
+
+.arrow-nav button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  background: #186eff url("../img/icon/arrow.svg") center no-repeat;
+}
+
+.arrow-nav button.prev {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: #2c2c2c;
+}
+
+.mainContainer {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+::-webkit-scrollbar {
+  opacity: 0.8;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #eef1f4;
+  width: 1px;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #186eff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .tituloReceitas {
@@ -652,12 +750,13 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #186eff;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .tituloLocalizacao {
