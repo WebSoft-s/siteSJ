@@ -146,6 +146,10 @@ body {
 .containerMenu {
   width: 100%;
   background-color: #186eff;
+  z-index: 5000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .logo {
@@ -204,13 +208,99 @@ body {
   font-weight: 500;
 }
 
+/* Parte mobile */
+/* IconeMenu */
 .menuMobileIcone {
-  width: 45px;
-  height: 45px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #707070;
+  width: 35px;
+  display: none;
+  height: 25px;
+  margin: 10px 10px 10px 5px;
+  cursor: pointer;
+}
+
+.menuMobileIcone span {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  margin: 7px 0 7px;
+}
+
+.menuMobileIcone::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+}
+
+.menuMobileIcone::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+}
+
+@media (max-width: 1060px) {
+  .menuMobileIcone {
+    display: block;
+  }
+  .menuLista {
+    display: none;
+  }
+  .containerMenu {
+    position: fixed;
+  }
+  .menuListaContainer {
+    position: fixed;
+    top: 92px;
+  }
+}
+
+/* Menu Cortina*/
+.menuMobContainerMain {
+  display: none;
+  position: fixed;
+  top: 136px;
+  width: 100%;
+  height: 100%;
+  background-color: #06378b;
+  z-index: 5000;
+}
+
+.menuMobContainerMain.ativo {
+  display: block;
+}
+
+.MenuMobLista {
+  width: 200px;
+  margin: 25% auto;
+}
+
+.MenuMobLista li {
+  padding: 20px 10px;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+  border: 2px #ffffff solid;
+}
+
+.MenuMobLista li a {
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.MenuMobLista li:hover {
+  background-color: #ffffff;
+}
+
+.MenuMobLista li:hover a {
+  color: #186eff;
 }
 
 /* Footer */
@@ -602,6 +692,12 @@ body {
 .arrow-nav button.prev {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
+}
+
+@media (max-width: 1060px) {
+  .slide {
+    margin-top: 135px;
+  }
 }
 
 * {

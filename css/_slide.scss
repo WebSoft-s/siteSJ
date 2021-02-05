@@ -49,3 +49,8 @@
 .arrow-nav button.prev {
   transform: rotate(-180deg);
 }
+@media (max-width: 1060px) {
+  .slide {
+    margin-top: 135px;
+  }
+}
