@@ -27,3 +27,21 @@ body {
   margin-top: 50px;
   color: $texto;
 }
+.mainContainer {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+::-webkit-scrollbar{
+  opacity: 0.8;
+  width: 10px;
+}
+::-webkit-scrollbar-track-piece{
+  background-color: $cinzaClaro;
+  width: 1px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #186eff; 
+  border-radius: 5px;
+}

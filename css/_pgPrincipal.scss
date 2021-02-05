@@ -21,11 +21,6 @@
 }
 
 /* Acesso rápido */
-.containerMainRapido {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .containerAcssRapido {
   display: flex;
   width: 100%;
@@ -33,11 +28,12 @@
 }
 .acssRapidoBoxes {
   display: flex;
+  flex-wrap: wrap;
   font-size: 0.8em;
   width: 500px;
   margin-top: 60px;
   justify-content: space-between;
-  flex-wrap: wrap;
+  
 }
 .acssRapidoBox {
   width: 150px;
@@ -67,11 +63,6 @@
 }
 
 /* Informações */
-.containerMainInfo {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .containerInformacoes {
   width: 100%;
   text-align: center;
@@ -90,10 +81,10 @@
 
 .infos {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 700px;
   margin: 70px auto 100px auto;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .funcionamento {
@@ -149,14 +140,8 @@
   cursor: pointer;
 }
 /* Sobre */
-.containerMainSobre {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .containerSobre {
   max-width: 100%;
-  max-width: 960px;
 }
 .containerSobre::before {
   content: '';
@@ -183,12 +168,6 @@
 }
 
 /* Contatos */
-.containerMainContatos {
-  width: 55%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-}
 .containerContatos {
   width: 100%;
   display: flex;
@@ -199,8 +178,11 @@
 
 .boxLoja {
   width: 230px;
-  max-height: 250px;
+  max-height: 260px;
   margin: 7px;
+  padding: 10px;
+  border: 3px solid $Azul;
+  border-radius: 5px;
 
   li {
     padding: 12px 0 12px 0;
