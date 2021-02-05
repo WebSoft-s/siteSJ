@@ -174,7 +174,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px 30px 7px 7px;
+  margin: 10px 20px 7px 7px;
   /* cima - direita - baixo - esquerda */
   -webkit-filter: drop-shadow(-2px -1px 1px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
           filter: drop-shadow(-2px -1px 1px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
@@ -202,6 +202,15 @@ body {
   color: #ffffff;
   font-size: 1.3em;
   font-weight: 500;
+}
+
+.menuMobileIcone {
+  width: 45px;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #707070;
 }
 
 /* Footer */
