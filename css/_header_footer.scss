@@ -59,6 +59,7 @@
   height: 25px;
   margin: 10px 10px 10px 5px;
   cursor: pointer;
+  z-index: 5300;
 }
 .menuMobileIcone span {
   content: '';
@@ -82,21 +83,7 @@
   height: 4px;
   background: $Branco;
 }
-@media (max-width: 1060px) {
-  .menuMobileIcone {
-    display: block;
-  }
-  .menuLista {
-    display: none;
-  }
-  .containerMenu {
-    position: fixed;
-  }
-  .menuListaContainer {
-    position: fixed;
-    top: 92px;
-  }
-}
+
 /* Menu Cortina*/
 .menuMobContainerMain {
   display: none;
@@ -109,6 +96,11 @@
 }
 .menuMobContainerMain.ativo {
   display: block;
+  animation: descer 0.3s;
+  transition: 0.5;
+}
+.menuMobContainerMain.desativado {
+  transition: 0.5;
 }
 .MenuMobLista {
   width: 200px;
@@ -134,6 +126,15 @@
     }
   }
 }
+@keyframes descer {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 /* Footer */
 
 .footer {

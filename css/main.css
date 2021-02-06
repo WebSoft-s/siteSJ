@@ -216,6 +216,7 @@ body {
   height: 25px;
   margin: 10px 10px 10px 5px;
   cursor: pointer;
+  z-index: 5300;
 }
 
 .menuMobileIcone span {
@@ -243,22 +244,6 @@ body {
   background: #ffffff;
 }
 
-@media (max-width: 1060px) {
-  .menuMobileIcone {
-    display: block;
-  }
-  .menuLista {
-    display: none;
-  }
-  .containerMenu {
-    position: fixed;
-  }
-  .menuListaContainer {
-    position: fixed;
-    top: 92px;
-  }
-}
-
 /* Menu Cortina*/
 .menuMobContainerMain {
   display: none;
@@ -272,6 +257,15 @@ body {
 
 .menuMobContainerMain.ativo {
   display: block;
+  -webkit-animation: descer 0.3s;
+          animation: descer 0.3s;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.menuMobContainerMain.desativado {
+  -webkit-transition: 0.5;
+  transition: 0.5;
 }
 
 .MenuMobLista {
@@ -301,6 +295,28 @@ body {
 
 .MenuMobLista li:hover a {
   color: #186eff;
+}
+
+@-webkit-keyframes descer {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes descer {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 /* Footer */
@@ -350,16 +366,18 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 0.8em;
-  width: 500px;
+  width: 55%;
   margin-top: 60px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .acssRapidoBox {
   width: 150px;
+  min-width: 110px;
   background-color: #186eff;
+  margin: 10px;
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
@@ -694,7 +712,7 @@ body {
           transform: rotate(-180deg);
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 760px) {
   .slide {
     margin-top: 135px;
   }
@@ -944,6 +962,96 @@ body {
   }
   .map {
     max-width: 250px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .titulo {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .acssRapidoBox {
+    width: 120px;
+    margin: 10px;
+  }
+  .acssRapidoBox h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .acssRapidoBox img {
+    width: 50px;
+    margin: 15px auto;
+  }
+  .sobreTxt {
+    margin: 15px 0 15px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+  .containerSobre::before {
+    margin: 40px auto 0px auto;
+  }
+  .containerSobre::after {
+    margin: 60px auto 0px auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .infos {
+    max-width: 500px;
+    margin: 60px auto 50px auto;
+  }
+  .Redes {
+    width: 400px;
+    margin-top: 20px;
+  }
+  .Redes ul {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 870px) {
+  .acssRapidoBoxes {
+    width: 65%;
+  }
+}
+
+@media (max-width: 760px) {
+  .menuMobileIcone {
+    display: block;
+  }
+  .menuLista {
+    display: none;
+  }
+  .containerMenu {
+    position: fixed;
+  }
+  .menuListaContainer {
+    position: fixed;
+    top: 92px;
+  }
+}
+
+@media (max-width: 733px) {
+  .acssRapidoBoxes {
+    width: 70%;
+  }
+}
+
+@media (max-width: 677px) {
+  .acssRapidoBoxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+  }
+}
+
+@media (max-width: 532px) {
+  .acssRapidoBoxes {
+    width: 40%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
