@@ -38,7 +38,6 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -86,7 +85,6 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -134,7 +132,6 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -166,7 +163,7 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
-  height: 45px;
+  height: 50px;
   background-color: #06378b;
   position: -webkit-sticky;
   position: sticky;
@@ -247,10 +244,10 @@ body {
 /* Menu Cortina*/
 .menuMobContainerMain {
   display: none;
-  position: fixed;
-  top: 136px;
+  position: absolute;
+  top: 50px;
   width: 100%;
-  height: 100%;
+  height: 700px;
   background-color: #06378b;
   z-index: 5000;
 }
@@ -279,6 +276,7 @@ body {
   text-align: center;
   width: 100%;
   border: 2px #ffffff solid;
+  border-radius: 5px;
 }
 
 .MenuMobLista li a {
@@ -538,7 +536,7 @@ body {
   width: 100%;
   height: 3px;
   background: #186eff;
-  margin: 130px auto 0px auto;
+  margin: 130px auto 0 auto;
   /* cima - direita - baixo - esquerda */
 }
 
@@ -556,24 +554,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 70px 0 90px;
+  margin: 50px 0 70px 0;
 }
 
 .boxLoja {
-  width: 230px;
+  width: 280px;
   max-height: 260px;
   margin: 7px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 10px #186eff;
+          box-shadow: 1px 1px 10px #186eff;
 }
 
 .boxLoja li {
-  padding: 12px 0 12px 0;
+  padding: 12px 0 12px 10px;
   font-size: 1.1em;
   font-weight: 500;
   color: #2c2c2c;
@@ -642,7 +642,6 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -712,12 +711,11 @@ body {
           transform: rotate(-180deg);
 }
 
-@media (max-width: 760px) {
+/*@media (max-width: 760px) {
   .slide {
     margin-top: 135px;
   }
-}
-
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -757,7 +755,6 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -873,7 +870,6 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #eef1f4;
   width: 1px;
-  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -934,7 +930,7 @@ body {
   text-align: center;
   padding: 10px;
   margin: 5px;
-  border: 2px solid lightblue;
+  border: 2px solid #186eff;
   border-radius: 12px;
 }
 
@@ -951,17 +947,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 40px 0 70px 0px;
+  margin: 40px 0 70px 20px;
 }
 
-@media (max-width: 1047px) {
+@media (max-width: 1046px) {
   .boxesAlpinopolis {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 40px 0 70px 0px;
   }
   .map {
-    max-width: 250px;
+    max-width: 280px;
   }
 }
 
@@ -1024,13 +1021,6 @@ body {
   .menuLista {
     display: none;
   }
-  .containerMenu {
-    position: fixed;
-  }
-  .menuListaContainer {
-    position: fixed;
-    top: 92px;
-  }
 }
 
 @media (max-width: 733px) {
@@ -1050,8 +1040,11 @@ body {
 
 @media (max-width: 532px) {
   .acssRapidoBoxes {
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
+  }
+  .acssRapidoBox {
+    width: 280px;
   }
 }
 /*# sourceMappingURL=main.css.map */

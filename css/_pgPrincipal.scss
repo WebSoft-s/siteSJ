@@ -146,7 +146,7 @@
   width: 100%;
   height: 3px;
   background: $Azul;
-  margin: 130px auto 0px auto; /* cima - direita - baixo - esquerda */
+  margin: 130px auto 0 auto; /* cima - direita - baixo - esquerda */
 }
 .sobreTxt {
   text-align: justify;
@@ -160,21 +160,21 @@
 .containerContatos {
   width: 100%;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 70px 0 90px;
+  justify-content: center;
+  margin: 50px 0 70px 0;
 }
 
 .boxLoja {
-  width: 230px;
+  width: 280px;
   max-height: 260px;
   margin: 7px;
-  padding: 10px;
-
+  padding: 15px;
   border-radius: 5px;
+  box-shadow: 1px 1px 10px  $Azul;
 
   li {
-    padding: 12px 0 12px 0;
+    padding: 12px 0 12px 10px;
     font-size: 1.1em;
     font-weight: 500;
     color: $texto;

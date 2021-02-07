@@ -55,13 +55,6 @@
   .menuLista {
     display: none;
   }
-  .containerMenu {
-    position: fixed;
-  }
-  .menuListaContainer {
-    position: fixed;
-    top: 92px;
-  }
 }
 @media (max-width: 733px) {
   .acssRapidoBoxes {
@@ -76,7 +69,10 @@
 }
 @media (max-width: 532px) {
   .acssRapidoBoxes {
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
+  }
+  .acssRapidoBox {
+    width: 280px;
   }
 }
