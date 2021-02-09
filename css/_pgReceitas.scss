@@ -70,8 +70,8 @@
 .titulosBoxReceita {
   font-size: 23px;
   color: $Branco;
-  font-family: Sail;
-  font-weight: 100;
+  font-family: 'Sail', cursive;
+  font-weight: 500;
 }
 .receita1 {
   background-image: url(/img/macarrao.jpg);
@@ -79,8 +79,20 @@
 .receita2 {
   background-image: url(/img/canelone.jpg);
 }
+.receita3 {
+  background-image: url(/img/bolo-milho.jpg);
+}
+.receita4 {
+  background-image: url(/img/bolo-laranja.jpg);
+}
+.receita5 {
+  background-image: url(/img/chocolate.jpg);
+}
+.receita6 {
+  background-image: url(/img/sanduiche.jpg);
+}
 //Modais Receitas
-.modalReceita{
+.modalReceita {
   display: none;
   position: fixed;
   z-index: 6000;
@@ -90,22 +102,26 @@
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   justify-content: center;
   align-items: center;
 }
 .close {
   float: right;
-  width: 10px;
-  height: 10px;
+  width: 40px;
+  font-size: 30px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
 }
 .close:hover,
-  .close:focus {
+.close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-.contentReceita{
+.contentReceita {
   background-color: $Branco;
   width: 400px;
   margin: 10px;
