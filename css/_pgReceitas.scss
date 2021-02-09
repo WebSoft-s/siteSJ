@@ -79,3 +79,38 @@
 .receita2 {
   background-image: url(/img/canelone.jpg);
 }
+//Modais Receitas
+.modalReceita{
+  display: none;
+  position: fixed;
+  z-index: 6000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  float: right;
+  width: 10px;
+  height: 10px;
+}
+.close:hover,
+  .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contentReceita{
+  background-color: $Branco;
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 24px;
+  text-align: justify;
+}
