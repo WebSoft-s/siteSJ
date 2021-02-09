@@ -953,6 +953,10 @@ body {
           align-items: center;
 }
 
+.modalReceita::-webkit-scrollbar {
+  display: none;
+}
+
 .close {
   float: right;
   width: 40px;
@@ -973,7 +977,7 @@ body {
 .contentReceita {
   background-color: #ffffff;
   width: 400px;
-  margin: 10px;
+  margin: 130px 10px 0px;
   padding: 20px;
   border-radius: 10px;
   line-height: 24px;
