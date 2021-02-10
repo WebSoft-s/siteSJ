@@ -104,7 +104,7 @@
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;
 }
 
 // Remove o scroll caso ele apareça quando o card da receita for muito alto(scroll funcionará normal)
@@ -130,7 +130,7 @@
 .contentReceita {
   background-color: $Branco;
   width: 400px;
-  margin: 130px 10px 0px;
+  margin: 20px;
   padding: 20px;
   border-radius: 10px;
   line-height: 24px;

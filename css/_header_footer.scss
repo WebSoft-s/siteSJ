@@ -91,12 +91,13 @@
   position: absolute;
   top: 50px;
   width: 100%;
-  height: 700px;
+  height: 500px;
   background-color: $AzulEscuro;
   z-index: 5000;
 }
 .menuMobContainerMain.ativo {
-  display: block;
+  display: flex;
+  align-items: center;
   animation: descer 0.3s;
   transition: 0.5;
 }
