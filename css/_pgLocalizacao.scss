@@ -15,7 +15,7 @@
 }
 .tituloCidades.tituloPassos,
 .tituloCidades.tituloAlpinopolis {
-  font-size: 1.2em;
+  font-size: 1.6em;
   text-align: left;
 }
 
@@ -38,19 +38,21 @@
   margin: 40px 0 30px 0px;
   justify-content: center;
 }
-.boxMapa {
+.boxMapa p{
+  font-size: 18px;
+  font-weight: 550;
   text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+.map{
+  display: flex;
+  justify-content: center;
+  max-width: 300px;
   padding: 10px;
   margin: 5px;
   border: 2px solid $Azul;// lightblue;
   border-radius: 12px;
-  p {
-    padding: 15px;
-    background-color: $cinzaClaro;
-  }
-}
-.map {
-  max-width: 280px;
 }
 .boxesAlpinopolis {
   display: flex;
@@ -59,9 +61,9 @@
 @media (max-width: 1046px) {
   .boxesAlpinopolis{
     justify-content: center;
-    margin: 40px 0 70px 0px;
+    margin: 20px 0 70px ;
   }
-  .map {
-    max-width: 280px;
+  .boxMapa {
+    margin-top: 20px;
   }
 }
