@@ -675,6 +675,89 @@ body {
   position: absolute;
 }
 
+/* Card Whatsapp */
+.whatsCard {
+  position: fixed;
+  display: none;
+  z-index: 6100;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+  width: 200px;
+  height: 170px;
+  overflow: auto;
+  background: #31ba46;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(-2px -2px 1px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4)) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(-2px -2px 1px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4)) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.4));
+}
+
+.whatsCard a:link {
+  text-decoration: none;
+}
+
+.whatsCard.on {
+  display: block;
+  -webkit-animation: subirCard 2s;
+          animation: subirCard 2s;
+}
+
+@-webkit-keyframes subirCard {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes subirCard {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.whatsCardBox {
+  border: #ffffff 3px solid;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.whatsCardBox img {
+  width: 120px;
+  margin: 0 auto;
+}
+
+.whatsCardBox h1 {
+  padding-top: 0px;
+  font-size: 20px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  color: #ffffff;
+}
+
+.closeWhats {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+  top: 5px;
+  right: 5px;
+  position: absolute;
+  background: url(../img/icon/fechar.svg) no-repeat center center;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1194,6 +1277,21 @@ body {
   }
   .menuLista {
     display: none;
+  }
+  .whatsCard {
+    width: 130px;
+    height: 130px;
+  }
+  .whatsCard img {
+    margin-top: 10px;
+    width: 70px;
+  }
+  .whatsCard h1 {
+    font-size: 13px;
+  }
+  .closeWhats {
+    width: 25px;
+    height: 25px;
   }
 }
 

@@ -55,6 +55,21 @@
   .menuLista {
     display: none;
   }
+  .whatsCard {
+    width: 130px;
+    height: 130px;
+    img {
+      margin-top: 10px;
+      width: 70px;
+    }
+    h1 {
+      font-size: 13px;
+    }
+  }
+  .closeWhats {
+    width: 25px;
+    height: 25px;
+  }
 }
 @media (max-width: 733px) {
   .acssRapidoBoxes {

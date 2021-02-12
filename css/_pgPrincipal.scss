@@ -200,3 +200,68 @@
   width: 25px;
   position: absolute;
 }
+
+/* Card Whatsapp */
+
+.whatsCard {
+  position: fixed;
+  display: none;
+  z-index: 6100;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+  width: 200px;
+  height: 170px;
+  overflow: auto;
+  background: #31ba46;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(-2px -2px 1px rgba(0, 0, 0, 0.4))
+    drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4))
+    drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(-2px -2px 1px rgba(0, 0, 0, 0.4))
+    drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4))
+    drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.4));
+  a:link {
+    text-decoration: none;
+  }
+}
+.whatsCard.on {
+  display: block;
+  animation: subirCard 2s;
+}
+@keyframes subirCard {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.whatsCardBox {
+  border: $Branco 3px solid;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  img {
+    width: 120px;
+    margin: 0 auto;
+  }
+  h1 {
+    padding-top: 0px;
+    font-size: 20px;
+    align-items: baseline;
+    color: $Branco;
+  }
+}
+.closeWhats {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+  top: 5px;
+  right: 5px;
+  position: absolute;
+  background: url(../img/icon/fechar.svg) no-repeat center center;
+  cursor: pointer;
+}
