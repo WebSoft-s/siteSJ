@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <div class="menuIconMobile" onclick="myFunction(this, 'mobNav')">
+    <div class="icon1"></div>
+    <div class="icon2"></div>
+    <div class="icon3"></div>
+</div>
+
+<style>
+  
+.menuIconMobile {
+  display: inline-block;
+  cursor: pointer;
+
+  padding: 50px;
+  
+}
+.icon1, .icon2, .icon3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .icon1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.change .icon2 {
+  opacity: 0;
+}
+.change .icon3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+</style>
+
+
+<script>
+  function myFunction(x) {
+      x.classList.toggle("change");
+  }
+</script>
+
+
+
+</body>
+</html>
