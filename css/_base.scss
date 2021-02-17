@@ -43,3 +43,35 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #06378b;
 }
+
+/* botao mobile */
+.menuIconMobile {
+  display: none;
+  cursor: pointer;
+
+  padding: 6px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  width: 35px;
+  height: 5px;
+  background-color: $Branco;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .icon1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .icon2 {
+  opacity: 0;
+}
+
+.change .icon3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
