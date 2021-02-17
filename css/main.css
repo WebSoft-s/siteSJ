@@ -44,49 +44,36 @@ body {
   background-color: #06378b;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  list-style-type: none;
+/* botao mobile */
+.menuIconMobile {
+  display: none;
+  cursor: pointer;
+  padding: 6px;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+.icon1,
+.icon2,
+.icon3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.change .icon1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.titulo {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 50px;
-  color: #2c2c2c;
+.change .icon2 {
+  opacity: 0;
 }
 
-.mainContainer {
-  width: 90%;
-  max-width: 980px;
-  margin: auto;
-}
-
-::-webkit-scrollbar {
-  opacity: 0.8;
-  width: 10px;
-}
-
-::-webkit-scrollbar-track-piece {
-  background-color: #eef1f4;
-  width: 1px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #06378b;
+.change .icon3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 * {
@@ -132,6 +119,115 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: #06378b;
+}
+
+/* botao mobile */
+.menuIconMobile {
+  display: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .icon1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .icon2 {
+  opacity: 0;
+}
+
+.change .icon3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: #2c2c2c;
+}
+
+.mainContainer {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+::-webkit-scrollbar {
+  opacity: 0.8;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #eef1f4;
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #06378b;
+}
+
+/* botao mobile */
+.menuIconMobile {
+  display: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .icon1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .icon2 {
+  opacity: 0;
+}
+
+.change .icon3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .containerMenu {
@@ -797,6 +893,38 @@ body {
   background-color: #06378b;
 }
 
+/* botao mobile */
+.menuIconMobile {
+  display: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .icon1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .icon2 {
+  opacity: 0;
+}
+
+.change .icon3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 /*Slide*/
 .containerSlides {
   width: 100%;
@@ -882,6 +1010,38 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: #06378b;
+}
+
+/* botao mobile */
+.menuIconMobile {
+  display: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .icon1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .icon2 {
+  opacity: 0;
+}
+
+.change .icon3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .tituloReceitas {
@@ -1094,6 +1254,38 @@ body {
   background-color: #06378b;
 }
 
+/* botao mobile */
+.menuIconMobile {
+  display: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .icon1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .icon2 {
+  opacity: 0;
+}
+
+.change .icon3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 .tituloLocalizacao {
   text-align: center;
   color: #2c2c2c;
@@ -1236,8 +1428,8 @@ body {
 }
 
 @media (max-width: 760px) {
-  .menuMobileIcone {
-    display: block;
+  .menuIconMobile {
+    display: inline-block;
   }
   .menuLista {
     display: none;
