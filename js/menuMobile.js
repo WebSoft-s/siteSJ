@@ -5,15 +5,24 @@ const lista = document.querySelectorAll('.MenuMobLista ul li a'); // seletor 'AL
 export default function handleClick() {
   if (menuMobile.className.indexOf('ativo') === -1) {
     menuMobile.classList.add('ativo');
+
     menuIconMobile.classList.add('on');
+
     menuMobile.classList.remove('desativado');
+
     menuIconMobile.classList.remove('off');
+
+    menuIconMobile.classList.add('change'); // icone menu
   } else if (menuMobile.className.indexOf('ativo') !== -1) {
     menuMobile.classList.add('desativado');
+
     menuIconMobile.classList.add('off');
+
     menuMobile.classList.remove('ativo');
+
     menuIconMobile.classList.remove('on');
-    menuIconMobile.classList.remove('change');
+
+    menuIconMobile.classList.remove('change'); // icone menu
   }
 }
 //quando clicar fora da lista do menuMobile ativa a função novamente fechando o menu
