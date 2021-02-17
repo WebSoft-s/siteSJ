@@ -13,7 +13,7 @@ export default function handleClick() {
     menuIconMobile.classList.add('off');
     menuMobile.classList.remove('ativo');
     menuIconMobile.classList.remove('on');
-    menuMobile.classList.remove('change');
+    menuIconMobile.classList.remove('change');
   }
 }
 //quando clicar fora da lista do menuMobile ativa a função novamente fechando o menu
