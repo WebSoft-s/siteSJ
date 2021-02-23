@@ -570,6 +570,7 @@ body {
   cursor: pointer;
 }
 
+/* wbs by JD&Ibb*/
 /* Informações */
 .containerInformacoes {
   width: 100%;
@@ -1072,6 +1073,7 @@ body {
   height: 400px;
   padding: 10px;
   margin: 7px;
+  /* wbs by JD&Ibb*/
 }
 
 .containerReceitas .boxReceita .boxImg {
@@ -1376,6 +1378,7 @@ body {
 }
 
 @media (max-width: 1060px) {
+  /* wbs by JD&Ibb*/
   .titulo {
     font-size: 1.7em;
     margin-bottom: 20px;
@@ -1530,7 +1533,7 @@ body {
   .acssRapidoBox {
     width: 280px;
   }
-  /* Infos */
+  /* Infos wbs by JD&Ibb*/
   .infos {
     margin: 40px auto 50px auto;
   }

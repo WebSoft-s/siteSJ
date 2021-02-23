@@ -50,6 +50,7 @@
       transform: scale(1.05);
       transition: 0.3s;
     }
+    /* wbs by JD&Ibb*/
   }
 }
 .containerMainReceitas::after {
@@ -104,10 +105,10 @@
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
   justify-content: center;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
-// Remove o scroll caso ele apareça quando o card da receita for muito alto(scroll funcionará normal)
+// Remove o scroll caso ele apareça quando o card da receita for muito alto(scroll funcionará normal) wbs by JD&Ibb
 .modalReceita::-webkit-scrollbar {
   display: none;
 }
