@@ -1530,6 +1530,10 @@ body {
   .acssRapidoBox {
     width: 280px;
   }
+  /* Infos */
+  .infos {
+    margin: 40px auto 50px auto;
+  }
   /*Contatos*/
   .containerContatos {
     margin: 20px 0 50px 0;
