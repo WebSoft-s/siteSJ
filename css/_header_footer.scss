@@ -179,6 +179,11 @@
   width: 100%;
   text-align: center;
   background-color: $Azul;
+  span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
 }
 .footer p {
   padding-top: 35px;
