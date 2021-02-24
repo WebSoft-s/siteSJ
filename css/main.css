@@ -487,6 +487,12 @@ body {
   background-color: #186eff;
 }
 
+.footer span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .footer p {
   padding-top: 35px;
   font-size: 1.2em;
@@ -506,26 +512,6 @@ body {
   color: #2c2c2c;
   font-style: italic;
   color: #ffffff;
-}
-
-.copyRightBottom {
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  background: #186eff;
-}
-
-.copyRightBottom p {
-  padding-top: 12px;
-  font-size: 15px;
-  color: #2c2c2c;
-  font-style: italic;
-  color: #ffffff;
-}
-
-.copyRightBottom span {
-  font-family: Rockwell Extra;
-  font-size: 16px;
 }
 
 /* Acesso rápido */
@@ -1573,11 +1559,12 @@ body {
   .boxesAlpinopolis {
     margin: 0px 0 50px;
   }
-  .copyRightBottom p {
-    font-size: 13px;
+  .footer {
+    height: 80px;
+    font-size: 14px;
   }
-  .copyRightBottom span {
-    font-size: 15px;
+  .footer span {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
