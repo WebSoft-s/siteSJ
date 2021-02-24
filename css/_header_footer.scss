@@ -198,3 +198,20 @@
   font-style: italic;
   color: $Branco;
 }
+.copyRightBottom {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  background: $Azul;
+  p {
+    padding-top: 12px;
+    font-size: 15px;
+    color: $texto;
+    font-style: italic;
+    color: $Branco;
+  }
+  span {
+    font-family: Rockwell Extra;
+    font-size: 16px;
+  }
+}
